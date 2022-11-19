@@ -1,4 +1,4 @@
-_G.Key = ""
+_G.Key = "BANANA-XQWKLSPDC"
 
 local ClientId = game:GetService("RbxAnalyticsService"):GetClientId()
 local Hwid = {
