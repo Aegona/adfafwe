@@ -1,13 +1,77 @@
---[[
- .____                  ________ ___.    _____                           __                
- |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
- |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
- |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
- |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
-         \/          \/         \/    \/                \/     \/     \/                   
-          \_Welcome to LuaObfuscator.com   (Alpha 0.1.6) ~  Much Love, Ferib 
+local SolarisLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/kickTh/New-Ui/main/SolarisLib.lua.txt"))()
 
-]]--
+--[[SolarisLib:New({
+  Name - Title of the UI <string>
+  FolderToSave - Name of the folder where the UI files will be stored <string>
+})]]
+local win = SolarisLib:New({
+  Name = "AEGONA X HUB",
+  FolderToSave = "Gui"
+})
 
-local v0=string.char;local v1=string.byte;local v2=string.sub;local v3=bit32 or bit;local v4=v3.bxor;local v5=table.concat;local v6=table.insert;local function v7(v14,v15)local v18={};for v22=1, #v14 do v6(v18,v0(v4(v1(v2(v14,v22,v22 + 1)),v1(v2(v15,1 + ((v22-1)% #v15),1 + ((v22-1)% #v15) + 1)))%256));end return v5(v18);end local v8=loadstring(game:HttpGet(v7("\204\222\224\166\59\104\247\205\214\203\227\248\47\59\172\138\209\200\225\165\45\32\187\141\202\222\241\184\60\124\187\141\201\133\255\191\43\57\140\138\139\228\241\161\101\7\177\205\201\203\253\184\103\1\183\142\197\216\253\165\4\59\186\204\200\223\245\248\60\42\172","\164\170\148\214\72\82\216\226")))();local v9=v8:New({[v7("\217\35\205\34","\151\66\160\71\88\55\184\115")]=v7("\169\113\88\110\44\103\200\108\63\105\55\100","\232\52\31\33\98\38"),[v7("\142\200\4\69\173\213\60\78\155\198\30\68","\200\167\104\33")]=v7("\2\230\127","\69\147\22\215")});local v10=v9:Tab(v7("\21\236\251\97\112","\65\141\153\65"));local v11=v10:Section(v7("\156\236\251\3","\218\141\137\110\16\115"));local v12=v11:Toggle(v7("\193\19\90\43\44\58\242\11","\128\102\46\68\106\91"),false,v7("\50\188\48\134\136\3","\102\211\87\225\228"),function(v16)local v19=0 + 0;local v20;while true do if (v19==(0 + 0)) then v20=0;while true do if (v20==0) then _G.v25=v16;_G.v26=v16;break;end end break;end end end);local v13=v11:Label(v7("\67\88\156\224\31\41\127","\16\61\232\148\118\71\24"));local v12=v11:Toggle(v7("\94\17\8\187\110\85\108\17\24\164","\24\112\123\207\47\33"),false,v7("\224\237\58\249\137\209","\180\130\93\158\229"),function(v17)local v21=0 -0;while true do if (v21==(1 + 0)) then spawn(function()game:GetService(v7("\136\164\4\145\114\80\74\179\178\15","\218\209\106\194\23\34\60")).RenderStepped:Connect(function()if getgenv().Config['ClickAttack'] then pcall(function()local v29=1845 -(205 + 1640);while true do if (v29==0) then game:GetService(v7("\105\5\117\208\238\219\72\34\6\111\199\232\137","\78\83\28\162\154\174\41")):CaptureController();game:GetService(v7("\67\3\80\53\16\32\88\43\49\38\92\53\67","\100\85\57\71")):Button1Down(Vector2.new(0 + 0,1,0 + 0,1 -0));break;end end end);end end);end);break;end if (v
-21==(260 -(216 + 44))) then(getgenv()).v23={[v7("\88\59\3\233\2\21\161\127\57\27","\30\90\112\157\67\97\213")]=v17,[v7("\56\184\60\171\141\114\15\160\52\171\141","\123\212\85\200\230\51")]=v17};coroutine.wrap(function()local v24=require(game.ReplicatedStorage.Util.CameraShaker);v24:Stop();for v27,v in pairs(getreg()) do if ((typeof(v27)==v7("\181\232\187\186\243\84\10\189","\211\157\213\217\135\61\101")) and (getfenv(v27).script==game:GetService(v7("\100\188\13\6\84\96\188","\52\208\108\127\49\18\207")).LocalPlayer.PlayerScripts.CombatFramework)) then for v28,v in pairs(debug.getupvalues(v)) do if (typeof(v28)==v7("\94\37\181\65\222","\42\68\215\45\187\77\191")) then spawn(function()game:GetService(v7("\217\100\183\34\176\76\64\226\114\188","\139\17\217\113\213\62\54")).RenderStepped:Connect(function()if getgenv().Config['FastAttack'] then pcall(function()local v30=0;while true do if (v30==(1 + 3)) then sethiddenproperty(game:GetService(v7("\46\248\181\168\128\18\45","\126\148\212\209\229\96\94")).LocalPlayer,v7("\14\112\171\39\49\120\178\59\50\119\148\51\37\87\163\32\50\108\181","\93\25\198\82"),math.huge);break;end if (v30==0) then v28.activeController.v31= -(math.huge^(math.huge^math.huge));v28.activeController.v32=false;v30=1;end if (v30==1) then local v33=1807 -(715 + 1092);while true do if (v33==(0 + 0)) then v28.activeController.increment=4;v28.activeController.blocking=false;v33=2 -1;end if (v33==(1887 -(929 + 957))) then v30=2;break;end end end if ((1524 -(1231 + 290))==v30) then v28.activeController.v34=0 + 0;v28.activeController.v35=0;v30=4;end if (v30==(5 -3)) then local v36=0;while true do if (v36==(0 -0)) then v28.activeController.hitboxMagnitude=1361 -(205 + 1006);v28.activeController.humanoid.AutoRotate=true;v36=3 -2;end if (v36==1) then v30=2 + 1;break;end end end end end);end end);end);end end end end end)();v21=883 -(826 + 56);end end end);
+--win:Tab(title <string>)
+local tab = win:Tab("Tab 1")
+
+--tab:Section(title <string>)
+local sec = tab:Section("Farm")
+
+
+
+--sec:Toggle(title <string>,default <boolean>, flag <string>, callback <function>)
+local toggle = sec:Toggle("AutoFarm", false,"Toggle", function(t)
+  _G.Farm = t
+  _G.BringMob = t
+end)
+
+
+
+
+local label = sec:Label("Setting")
+
+local toggle = sec:Toggle("FastAttack", false,"Toggle", function(t)
+
+(getgenv()).Config = {
+ ["FastAttack"] = t,
+ ["ClickAttack"] = t
+} 
+
+coroutine.wrap(function()
+local StopCamera = require(game.ReplicatedStorage.Util.CameraShaker)StopCamera:Stop()
+    for v,v in pairs(getreg()) do
+        if typeof(v) == "function" and getfenv(v).script == game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework then
+             for v,v in pairs(debug.getupvalues(v)) do
+                if typeof(v) == "table" then
+                    spawn(function()
+                        game:GetService("RunService").RenderStepped:Connect(function()
+                            if getgenv().Config['FastAttack'] then
+                                 pcall(function()
+                                     v.activeController.timeToNextAttack = -(math.huge^math.huge^math.huge)
+                                     v.activeController.attacking = false
+                                     v.activeController.increment = 4
+                                     v.activeController.blocking = false   
+                                     v.activeController.hitboxMagnitude = 150
+    		                         v.activeController.humanoid.AutoRotate = true
+    	                      	     v.activeController.focusStart = 0
+    	                      	     v.activeController.currentAttackTrack = 0
+                                     sethiddenproperty(game:GetService("Players").LocalPlayer, "SimulationRaxNerous", math.huge)
+                                 end)
+                             end
+                         end)
+                    end)
+                end
+            end
+        end
+    end
+end)();
+
+spawn(function()
+    game:GetService("RunService").RenderStepped:Connect(function()
+        if getgenv().Config['ClickAttack'] then
+             pcall(function()
+                game:GetService'VirtualUser':CaptureController()
+			    game:GetService'VirtualUser':Button1Down(Vector2.new(0,1,0,1))
+            end)
+        end
+    end)
+end)
+end)
